@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alavala Ram Akhil — Developer</title>
+  <meta name="description" content="Personal portfolio and developer website of Alavala Ram Akhil. Developer specializing in modern web engineering, interactive applications, and creative technology.">
+  <meta name="keywords" content="Alavala Ram Akhil, Ram Akhil, Developer, Software Engineer, Joy University, NIAT, Web Developer, JavaScript, Python, React">
+  <meta name="author" content="Alavala Ram Akhil">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alavala Ram Akhil — Developer">
+  <meta property="og:description" content="Personal portfolio of Alavala Ram Akhil. Software engineering, web development, and creative tech.">
+  <meta property="og:url" content="https://alavalaramakhil.dev">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#about" class="brand-link">
+        <span class="brand-avatar" id="brand-avatar">RA</span>
+        <span id="brand-name">Alavala Ram Akhil</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#writing" class="nav-link">Writing</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Command palette shortcut button -->
+        <button class="cmd-k-badge" id="cmd-k-trigger" title="Open Command Palette (Cmd+K / Ctrl+K)">
+          <span>Search</span>
+          <kbd>⌘K</kbd>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / About Section -->
+    <section class="hero-section" id="about">
+      <div class="container">
+        <div class="status-badge" id="hero-status-badge">
+          <span class="pulse-dot"></span>
+          <span>Developer &bull; B.Tech @ Joy University (NIAT)</span>
+        </div>
+
+        <h1 class="hero-title" id="hero-title">
+          Hey, I'm <span class="hero-gradient-text">Alavala Ram Akhil</span>.
+        </h1>
+
+        <div class="hero-headline" id="hero-headline">
+          Developer &bull; Software Engineering & Creative Tech
+        </div>
+
+        <p class="hero-bio" id="hero-bio">
+          I'm a developer and Computer Science student at Joy University (NIAT). Passionate about crafting high-performance web applications, interactive digital experiences, and turning innovative tech ideas into scalable products.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            Explore Projects
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+
+          <a href="#writing" class="btn-secondary">
+            Read Insights
+          </a>
+
+          <button class="btn-secondary copy-email-btn" title="Copy email address to clipboard">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy Email
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-label">Education & Career</span>
+            <h2 class="section-title">Experience & Journey</h2>
+          </div>
+        </div>
+
+        <div class="experience-list" id="experience-list">
+          <!-- Dynamically populated from site-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-label">Featured Work</span>
+            <h2 class="section-title">Selected Projects</h2>
+          </div>
+          <div class="filter-group" id="project-filters">
+            <!-- Filter buttons dynamically rendered -->
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects dynamically populated from site-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing / Insights Section -->
+    <section class="section" id="writing">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-label">Thoughts & Articles</span>
+            <h2 class="section-title">Writing & Insights</h2>
+          </div>
+        </div>
+
+        <div class="articles-list" id="articles-list">
+          <!-- Articles dynamically populated from site-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technologies Matrix -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-label">Capabilities</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills dynamically populated from site-data.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div>© <span id="footer-year">2025</span> <span id="footer-name">Alavala Ram Akhil</span>. All rights reserved.</div>
+        <div style="color: var(--text-muted); font-size: 0.8rem;">
+          Engineered with performance, clean typography, and zero heavy dependencies.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/akhilalavala50-alt" target="_blank" rel="noopener noreferrer" class="footer-link" id="social-github">GitHub</a>
+        <a href="https://www.linkedin.com/in/alavala-ram-akhil-21bb00423" target="_blank" rel="noopener noreferrer" class="footer-link" id="social-linkedin">LinkedIn</a>
+        <a href="mailto:akhilalavala50@gmail.com" class="footer-link copy-email-btn">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal / Article Reader Drawer -->
+  <div class="modal-backdrop" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-article-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <span class="modal-title-bar">Reading View</span>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close article modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <h1 class="article-view-title" id="modal-article-title"></h1>
+        <div class="article-view-meta" id="modal-article-meta"></div>
+        <div class="article-view-content" id="modal-article-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette Modal (Cmd+K) -->
+  <div class="cmd-palette-backdrop" id="cmd-palette-backdrop" role="dialog" aria-modal="true">
+    <div class="cmd-palette">
+      <div class="cmd-input-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="cmd-input" id="cmd-input" placeholder="Type a command or search sections, projects, articles..." autocomplete="off" spellcheck="false">
+      </div>
+      <ul class="cmd-results" id="cmd-results">
+        <!-- Populated via setupCommandPalette in app.js -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="site-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
